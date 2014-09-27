@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
+- (IBAction)onClick:(id)sender;
 
 @end
 
@@ -24,4 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)onClick:(id)sender {
+    self.label.text = @"sidney";
+}
 @end
